@@ -1,0 +1,272 @@
+
+/*----------------------------------------*/
+/*  1. Common
+/*----------------------------------------*/
+html, body {height: 100%; font-family: 'Roboto', sans-serif;font-weight:400;background:#F6F8FA;}
+.floatleft {float:left}
+.floatright {float:right}
+.alignleft {float:left;margin-right:15px;margin-bottom: 15px}
+.alignright {float:right;margin-left:15px;margin-bottom: 15px}
+.aligncenter {display:block;margin:0 auto 15px}
+a:focus {outline:0px solid}
+img {max-width:100%;height:auto}
+.fix {overflow:hidden}
+p {margin:0 0 15px;}
+h1, h2, h3, h4, h5, h6 {
+  /* margin: 0 0 10px; */
+  font-weight:700;
+}
+/*----------------------------------------*/
+/*  4. left sidebar
+/*----------------------------------------*/
+.all-content-wrapper {
+    margin-left: 200px;
+    transition: all 0.3s;
+}
+.left-sidebar-pro {
+    z-index: 9999;
+    width: 240px;
+}
+#sidebar {
+    min-width: 200px;
+    background: #fff;
+    color: #fff;
+	position:fixed;
+    transition: all 0.3s;
+	z-index:999;
+	height:100%;
+}
+.educate-icon i{
+    width: 25px;
+}
+.mini-navbar .all-content-wrapper {
+    margin-left: 80px;
+    transition: all 0.3s;
+}
+#sidebar.active {
+    min-width: 80px;
+    max-width: 80px;
+    text-align: center;
+}
+#sidebar.active .sidebar-header h3, #sidebar.active .CTAs {
+    display:none;
+}
+
+#sidebar.active ul li .sidebar-right-icon {
+    display:none;
+}
+.bar-button-pro {
+    margin: 13px 0px;
+	font-size:16px;
+	color:#fff;
+}
+.sidebar-header {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 51px;
+}
+
+#sidebar ul li a .sidebar-right-icon{
+	float: right;
+}
+.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro{
+	width:100%;
+}
+.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li{
+	display:block;
+	float:none;
+	position:relative;
+}
+.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li .left-menu-dropdown{
+	left:0px;
+	top:0px;
+	opacity:0;
+	border-radius:0;
+	border:0px solid #fff;
+	box-shadow:none;
+	background:#ebebeb;
+}
+.left-custom-menu-adp-wrap .dropdown-menu{
+	position: relative;
+	float: none;
+}
+.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li .left-menu-dropdown a:hover{
+	padding:15px 30px;
+	transition:all .4s ease 0s;
+	background:#fff;
+}
+.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li.open .left-menu-dropdown{
+	opacity:1;
+	left: 0px;
+	z-index:9999;
+}
+.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li.open .left-menu-dropdown.chart-left-menu-std{
+	top:0px;
+}
+.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li.open .left-menu-dropdown.form-left-menu-std{
+	top: 0px;
+}
+.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li.open .left-menu-dropdown.apps-left-menu-std{
+	top: 0px;
+}
+.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li.open .left-menu-dropdown.pages-left-menu-std{
+	top: 0px;
+}
+.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li a{
+	display: block;
+    padding: 15px 20px;
+    color: #444;
+    transition: all .4s ease 0s;
+    font-size: 16px;
+}
+.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li a:hover, .left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li a:focus, .left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li a:active, .left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li a:visited{
+	background:#ebebeb;
+	color:#444;
+}
+.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li .indicator-right-menu{
+	float: right;
+	font-size:12px;
+}
+#sidebar.active .left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li.open .left-menu-dropdown {
+    left: 80px;
+}
+#sidebar.active .left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li .mini-dn {
+    display:none;
+}
+#sidebar.active .left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li .big-icon {
+    font-size:20px;
+}
+#sidebar.active .left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li > a {
+    padding: 20px 20px;
+}
+/*----------------------------------------*/
+/*  4.1 Left Sidebar switcher
+/*----------------------------------------*/
+.menu-switcher-pro {
+	transition:all .4s ease 0s;
+}
+.mini-navbar .menu-switcher-pro {
+    transition: all 0.3s;
+}
+.menu-switcher-pro button{
+	background: none;
+	border:none;
+}
+.menu-switcher-pro button:hover, .menu-switcher-pro button:focus, .menu-switcher-pro button:active, .menu-switcher-pro button:visited{
+	background: none;
+	border:none;
+}
+
+/*----------------------------------------*/
+/*  13. Courses
+/*----------------------------------------*/
+.header-top-area {
+    position: fixed;
+
+    z-index: 99;
+    left: 200px;
+    right: 0;
+    top: 0;
+    margin: 0 auto;
+    transition: all 0.3s;
+}
+.jqstooltip {
+  width: auto !important;
+  height: auto !important;
+}
+.mini-navbar .header-top-area{
+	left: 80px;
+	z-index:9999;
+}
+/*----------------------------------------*/
+/*  18. Form Element
+/*----------------------------------------*/
+/*  */
+div#sparklinehome canvas {
+    width: 100% !important;
+}
+.header-top-area {
+    background: #006DF0;
+}
+.sidebar-nav .metismenu{
+	background: #fff;
+}
+.sidebar-nav {
+    background: #fff;
+}
+.sidebar-nav ul{
+	background: #fff;
+}
+#sidebar.active .sidebar-nav ul.metismenu li ul.submenu-angle{
+	position: absolute;
+    right: -180px;
+    top: 0px;
+    text-align: left;
+    width: 180px;
+    background: #fff;
+	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,.175);
+    box-shadow: 0 1px 4px rgba(0,0,0,.175);
+}
+#sidebar.active .sidebar-nav .metismenu a:hover, #sidebar.active .sidebar-nav .metismenu a:focus, #sidebar.active .sidebar-nav .metismenu a:active{
+	background:#F6F8FA;
+}
+#sidebar.active .mCustomScrollBox{
+	overflow:unset;
+}
+#sidebar.active .mCSB_container{
+	overflow:unset;
+}
+.sidebar-nav .metismenu a{
+	color:#000;
+}
+.sidebar-nav .metismenu a:hover, .sidebar-nav .metismenu a:focus, .sidebar-nav .metismenu a:active {
+    background: #F6F6F6;
+}
+#sidebar {
+    background: #fff;
+}
+#sidebar .sidebar-header {
+    background: #fff;
+}
+/* #sidebar.active .sidebar-header {
+    padding-top:10px;
+	position:relative;
+	z-index:9;
+	padding-bottom:10px;
+} */
+
+.single-product-text .button-default.cart-btn {
+    background: #006DF0;
+}
+.footer-copyright-area {
+    background: #006DF0;
+	padding: 20px 0px;
+    text-align: center;
+}
+.edu-custon-design .panel-heading {
+    background: #006DF0;
+    color: #fff;
+}
+.panel-group.edu-custon-design .accordion-head a:hover, .panel-group.edu-custon-design .accordion-head a:focus, .panel-group.edu-custon-design .accordion-head a:active {
+    color: #fff;
+}
+
+.menu-switcher-pro .btn-info:active, .menu-switcher-pro .btn-info:focus, .menu-switcher-pro .btn-info:hover, .menu-switcher-pro .btn-info:visited, .header-drl-controller-btn.btn-info:active:focus{
+	background: #006DF0;
+	outline:none;
+}
+
+/*----------------------------------------*/
+/*  23. footer
+/*----------------------------------------*/
+.footer-copy-right p {
+    margin: 0px;
+    font-size: 15px;
+    color: #fff;
+}
+.footer-copy-right a{
+	color:#fff;
+	text-decoration:none;
+}
